@@ -253,7 +253,10 @@
 <body>
 
   <p>Version 1.0</p>
-
+  {% if (process.env.ENVIRONMENT) { %}
+  <p>Env: <%= process.env.ENVIRONMENT %>
+  </p>
+  {% } %}
   <section class='container'>
     <hgroup>
       <h1>Welcome to your Node.js application on OpenShift</h1>
